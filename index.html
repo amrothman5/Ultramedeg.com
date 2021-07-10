@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ultramedeg</title>
+</head>
+<body>
+    <section >
+    <div class="container-fluid  page  d-flex flex-wrap flex-column justify-content-center  align-items-center" style="background-image: url(img/pexels-daniel-frank-287237.jpg);" >
+        <section>
+                <h1 style="font-family: 'Monoton', cursive;" class="text-secondary">CURRENTLY WORKING ON NEW SITE</h1>
+                <p class="text-center " style="font-size: 30px;   font-family: 'Fredericka the Great', cursive;"  ><strong class="text-primary"> <i class="fab fa-uniregistry "></i>ltramedeg</strong></p>
+        </section>
+        <section class="main row justify-content-center  align-items-center " onload="showtime( )">
+
+         <div  class="bor col-1     text-primary d-flex flex-column  justify-content-center align-items-center  ">
+          <strong><div id="day"  ></div></strong>
+          <div><strong>Days</strong> </div>
+         </div>
+
+         <div  class="bor col-1       text-primary  d-flex flex-column  justify-content-center align-items-center ">
+           <strong><div id="hou"  style="font-family: 'Yellowtail', cursive;"></div></strong> 
+          <div><h4><strong>Hours</strong> </h4></div>
+         </div>
+         
+         <div  class="bor col-1       text-primary  d-flex flex-column  justify-content-center align-items-center ">
+           <strong><div id="min"></div></strong> 
+          <div><h4><strong>minutes</strong> </h4></div>
+         </div>
+         
+         <div  class="bor col-1       text-primary  d-flex flex-column  justify-content-center align-items-center ">
+          <strong><div id="sec"></div></strong>
+          <div><h4><strong>Seconds</strong></h4></div>
+         </div>
+         
+         <div  class="bor col-1       text-primary  d-flex flex-column  justify-content-center align-items-center ">
+          <strong><div id="timezone"></div></strong>
+          <div><h4><strong> timezone</strong></h4></div>
+         </div>
+
+
+        </section>
+   
+    </div>
+
+
+    </section>
+
+
+
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Function for clock -->
+<script src="js/script.js"> </script>
+
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript">
+  var a = document.getElementById('disc-50');
+  a.onclick = function () {
+    Clipboard_CopyTo("T9TTVSQB");
+    var div = document.getElementById('code-success');
+    div.style.display = 'block';
+    setTimeout(function () {
+      document.getElementById('code-success').style.display = 'none';
+    }, 900);
+  };
+
+  function Clipboard_CopyTo(value) {
+    var tempInput = document.createElement("input");
+    tempInput.value = value;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+  }
+</script>
+</body>
+</html>
