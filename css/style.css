@@ -41,7 +41,7 @@
     -o-border-radius: 8px;
 }
 
-@media screen and (max-width: 300px ) {
+@media screen and (max-width: 500px ) {
     .page::after {
         content: ' ';
         width: 100%;
@@ -53,5 +53,8 @@
 
 }
 
+body{
+    height: 100%;
+}
 
 }
