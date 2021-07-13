@@ -1,10 +1,11 @@
+var day =0;
 function showtime( ){
     var date= new Date( );
 var houres =  date.getHours( );
 var minutes=  date.getMinutes( );
 var seconds= date.getSeconds( );
 var timezone ="AM";
-var day =0;
+
       if(houres===0 ){
     houres=12;
 }
@@ -12,7 +13,7 @@ if(houres >12 ){
    houres-=12;
    timezone="PM";
 }
-if( houres=== 12 && timezone==="AM")
+if( houres=== 12&&minutes===0 && seconds===0 && timezone==="AM")
 {
     day +=1;
 }
